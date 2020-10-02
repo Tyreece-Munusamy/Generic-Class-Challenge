@@ -7,19 +7,19 @@ public class Main {
 
     public static void main(String[] args) {
     	// players were removed for simplicity -> refer to file: 'Our Generic Class'
-	 Team soccerTeam = new Team("Liverpool");
-	 Team soccerTeam2 = new Team("West Ham");
-	 Team soccerTeam3 = new Team("Arsenal");
+	 Team liverpool = new Team("Liverpool");
+	 Team westHam = new Team("West Ham");
+	 Team arsenal = new Team("Arsenal");
 
-	 League<Team> league = new League<>("league1");
-	 league.addTeam(soccerTeam);
-	 league.addTeam(soccerTeam2);
-	 league.addTeam(soccerTeam3);
-	 league.playMatch(soccerTeam,soccerTeam2,10,13);
-	 league.playMatch(soccerTeam2,soccerTeam,5,6);
-	 league.playMatch(soccerTeam3,soccerTeam2,9,6);
-	 league.playMatch(soccerTeam3,soccerTeam,6,9);
-	 league.playMatch(soccerTeam3,soccerTeam,6,9);
+	 League<Team> league = new League<>("The League");
+	 league.addTeam(liverpool);
+	 league.addTeam(westHam);
+	 league.addTeam(arsenal);
+	 league.playMatch(liverpool,westHam,10,13);
+	 league.playMatch(westHam,liverpool,5,6);
+	 league.playMatch(arsenal,westHam,9,6);
+	 league.playMatch(arsenal,liverpool,6,9);
+	 league.playMatch(arsenal,liverpool,6,9);
 	 league.sortTeams();
     }
 }
