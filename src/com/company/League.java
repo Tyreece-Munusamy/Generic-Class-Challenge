@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class League<T extends Team> {
@@ -25,7 +24,7 @@ public class League<T extends Team> {
         }
     }
     public void sortTeams() {
-        Collections.sort(league);
+//        Collections.sort(league);
         int rank = 1;
 //        int gamesPlayedInLeague = 0;
         System.out.println("\n" + "Team ranks in " + this.getName());

@@ -32,8 +32,11 @@ public class Team implements Comparable<Team> {
     }
 
     public void playMatch(Team homeTeam,Team awayTeam,int homeTeamScore,int awayTeamScore) {
+        System.out.println(homeTeam.getName() + " perspective: ");
         playMatchInterface(homeTeam,awayTeam,homeTeamScore,awayTeamScore);
+        System.out.println(awayTeam.getName() + " perspective: ");
         playMatchInterface(awayTeam,homeTeam,awayTeamScore,homeTeamScore);
+        System.out.println('\n');
     }
     public int teamRanking() {
         return ((totalGoalsScored * 2) + (won - lost)) + tied;
